@@ -1,0 +1,21 @@
+steps:
+  - name: hashicorp/terraform
+    entrypoint: sh
+    args:
+      - "-c"
+      - |
+      
+        cd terraform/
+        
+        terraform init -reconfigure
+
+         
+  - name: hashicorp/terraform
+    entrypoint: sh
+    args:
+      - "-c"
+      - |
+
+        cd terraform/
+
+        terraform plan
