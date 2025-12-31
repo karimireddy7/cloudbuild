@@ -20,15 +20,5 @@ steps:
 
         terraform plan
         
-
-  - name: hashicorp/terraform
-     entrypoint: sh
-     args:
-        - "-c"
-       - |
-
-         cd terraform/
- 
-        terraform apply -auto-approve
 options:
   logging: CLOUD_LOGGING_ONLY
