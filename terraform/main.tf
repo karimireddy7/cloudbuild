@@ -10,6 +10,7 @@ resource "google_storage_bucket" "bucket-enabled" {
   location      = "EU"
   force_destroy = true
 }
+##
 resource "google_storage_bucket" "bucket-enabled1" {
   name          = "lumen-ck7674-bucket2"
   project       = "ck7674"
