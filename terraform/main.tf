@@ -24,12 +24,12 @@ resource "google_compute_network" "vpc_network" {
 
 resource "google_compute_instance" "vm_instance" {
    name          = "demo-vm"
-   manchine_type = "e2-micro"
-   zone          = "us-centeral1-a"
+   machine_type = "e2-micro"
+   zone          = "us-central1-a"
 
 boot_disk {
 initialize_params {
-   image         = "projects/debian-cloud/global/images//familydebian-11"
+   image         = "debian-cloud/debian-11"
 }
 }
 network_interface {
