@@ -20,10 +20,12 @@ resource "google_storage_bucket" "bucket-enabled1" {
 ##
 resource "google_compute_network" "vpc_network" {
   name = "demo-vpc"
+  project = "ck7674"
 }
 
 resource "google_compute_instance" "vm_instance" {
    name          = "demo-vm"
+   project      = "ck7674"
    machine_type = "e2-micro"
    zone          = "us-central1-a"
 
