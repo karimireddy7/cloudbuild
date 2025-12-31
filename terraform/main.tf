@@ -6,6 +6,7 @@ terraform {
 }
 resource "google_storage_bucket" "bucket-enabled" {
   name          = "lumen-ck7674-bucket"
+  project       = "ck7674"
   location      = "EU"
   force_destroy = true
 }
