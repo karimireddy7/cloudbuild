@@ -29,7 +29,7 @@ resource "google_compute_instance" "vm-instance" {
 
 boot_disk {
 initialize_params {
-   image = "projects/debian-cloudglobal/imagesfamilydebian-11"
+   image         = "projects/debian-cloud/global/images//familydebian-11"
 }
 }
 network_interface {
