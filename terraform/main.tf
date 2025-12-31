@@ -18,8 +18,22 @@ resource "google_storage_bucket" "bucket-enabled1" {
   force_destroy = true
 }
 ##
+resource "google_compute_network" "vpc_network" {
+  name = "demo-vpc"
+}
+
 resource "google_compute_instance" "vm-instance" {
    name          = "demo-vm"
    manchine_type = "e2-micro"
    zone          = "us-centeral1-a"
+
+boot_disk {
+initialize_params {
+   image = "debian-cloud/debian-11"
+}
+}
+network_interface {
+network =  google_compute_network.vpc_network.name
+access_config {}
+}
 }
