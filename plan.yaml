@@ -19,3 +19,5 @@ steps:
         cd terraform/
 
         terraform plan
+options:
+  logging: CLOUD_LOGGING_ONLY
