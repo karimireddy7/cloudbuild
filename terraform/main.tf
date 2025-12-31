@@ -22,7 +22,7 @@ resource "google_compute_network" "vpc_network" {
   name = "demo-vpc"
 }
 
-resource "google_compute_instance" "vm-instance" {
+resource "google_compute_instance" "vm_instance" {
    name          = "demo-vm"
    manchine_type = "e2-micro"
    zone          = "us-centeral1-a"
