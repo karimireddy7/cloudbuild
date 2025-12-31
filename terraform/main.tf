@@ -17,3 +17,9 @@ resource "google_storage_bucket" "bucket-enabled1" {
   location      = "EU"
   force_destroy = true
 }
+##
+resource "google_compute_instance" "vm-instance" {
+   name          = "demo-vm"
+   manchine_type = "e2-micro"
+   zone          = "us-centeral1-a"
+}
