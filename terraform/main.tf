@@ -15,14 +15,6 @@ resource "google_storage_bucket" "bucket-enabled1" {
   name          = "lumen-ck7674-bucket4"
   project       = "ck7674"
   location      = "EU"
-  lifecycle_rule {
- action {
- type = "Delete"
-}
-condition {
-age = 30
-}
-}
   force_destroy = true
 }
 ##
