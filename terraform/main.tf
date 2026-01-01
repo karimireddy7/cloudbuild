@@ -18,6 +18,12 @@ resource "google_storage_bucket" "bucket-enabled1" {
   force_destroy = true
 }
 ##
+resource "google_storage_bucket" "bucket-enabled1" {
+  name          = "lumen-ck7674-bucket3"
+  project       = "ck7674"
+  location      = "EU"
+  force_destroy = true
+}
 resource "google_compute_network" "vpc_network" {
   name = "demo-vpc"
   project = "ck7674"
