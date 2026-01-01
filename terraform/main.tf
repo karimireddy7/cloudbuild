@@ -18,7 +18,7 @@ resource "google_storage_bucket" "bucket-enabled1" {
   force_destroy = true
 }
 ##
-resource "google_storage_bucket" "bucket-enabled1" {
+resource "google_storage_bucket" "bucket-enabled2" {
   name          = "lumen-ck7674-bucket3"
   project       = "ck7674"
   location      = "EU"
