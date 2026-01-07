@@ -6,7 +6,6 @@ steps:
       - "-c"
       - |
       
-        cd terraform/
         
         terraform init -reconfigure
 
@@ -17,7 +16,6 @@ steps:
       - "-c"
       - |
 
-        cd terraform/
 
         terraform plan
 
@@ -28,7 +26,6 @@ steps:
       - "-c"
       - |
 
-        cd terraform/
 
         terraform apply -auto-approve
 options:
